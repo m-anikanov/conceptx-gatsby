@@ -1,0 +1,15 @@
+@import '../../constants';
+
+.captionText {
+  padding: 26px 30px;
+  font-size: 22px;
+
+  span {
+    margin-top: 8px;
+    display: inline-block;
+  }
+}
+
+.company {
+  font-weight: bold;
+}

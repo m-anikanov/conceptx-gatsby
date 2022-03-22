@@ -1,0 +1,64 @@
+@import '../../constants';
+
+.block {
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  transform: translateZ(0); /* Safari hack */
+}
+
+a.block:hover .picture {
+  transform: scale(1.05);
+}
+
+.picture, .overlay {
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.picture {
+  background-color: $background-gray;
+  position: relative;
+  flex: 1 1 auto;
+  transition: transform ease-out .2s;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  mask-image: linear-gradient(rgba(0, 0, 0, 0) 0%, black 50%, black 100%);
+  mask-position: 0 100%;
+  mask-repeat: repeat-x;
+  mask-size: auto 45%;
+}
+
+.blur {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  bottom: 0;
+  left: 0;
+  font-size: 22px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px) brightness(110%) contrast(0.9);
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

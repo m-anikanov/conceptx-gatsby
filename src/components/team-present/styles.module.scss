@@ -1,0 +1,51 @@
+@import '../../constants';
+
+.block {
+  background: $background-gray;
+  border-radius: 8px;
+  padding: 26px 30px;
+}
+
+.title {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.team {
+  margin-top: 26px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.person {
+  flex: 1;
+  display: flex;
+
+  align-items: center;
+}
+
+.personInfo {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.personName {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.personPosition {
+  font-size: 14px;
+}
+
+.personImg {
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+

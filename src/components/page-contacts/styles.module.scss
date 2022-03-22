@@ -1,0 +1,23 @@
+.contacts {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.contactItem {
+    flex: 1 1 auto;
+}
+
+.contactItemMap {
+    margin-bottom: 10px;
+}
+
+.contactItemTitle {
+    font-weight: 600;
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+.contactItemInfo {
+    margin: 5px 0;
+}

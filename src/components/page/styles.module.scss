@@ -1,0 +1,17 @@
+@import '../../constants';
+
+:global(body) {
+  margin: 0;
+  font-family: -apple-system, Roboto, sans-serif, serif;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: $content-width-desktop;
+  line-height: 1.5em;
+  font-size: 15px;
+}

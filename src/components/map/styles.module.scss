@@ -1,0 +1,12 @@
+@import '../../constants';
+
+.map {
+  display: block;
+  line-height: 0;
+}
+
+.mapImage {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}

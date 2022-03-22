@@ -1,0 +1,44 @@
+@import '../../constants';
+
+.block {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(465px, 1fr));
+}
+
+.itemGroup {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform ease-out .2s;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.itemName {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.itemCaption {
+  font-size: 13px;
+  color: #333;
+  margin-top: 2px;
+}
+
+.former {
+  display: block;
+}

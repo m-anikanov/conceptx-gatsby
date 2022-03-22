@@ -1,0 +1,74 @@
+.block {
+  position: relative;
+  padding-top: 40px;
+
+  &:not(:last-child):after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-top: 1px dashed #ccc;
+    margin-top: 30px;
+  }
+}
+
+.anchor {
+  position: absolute;
+  top: 1px;
+}
+
+.columns {
+  display: flex;
+  column-gap: 20px;
+  gap: 20px;
+}
+
+.left {
+  flex: 0 0 160px;
+}
+
+.content {
+  flex: 1 1 auto;
+
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 25px 0 15px;
+  }
+
+  h4 {
+    font-size: 15px;
+    margin: 0 0 10px;
+  }
+
+  p {
+    margin: 0 0 10px;
+  }
+}
+
+.title {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  top: 20px;
+}
+
+.titleText {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.captionText {
+  font-size: 15px;
+}
+
+.right {
+  flex: 0 0 260px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.picture {
+  height: 180px;
+}
