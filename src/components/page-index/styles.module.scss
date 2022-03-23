@@ -1,14 +1,21 @@
 .presentationArea {
-  display: flex;
-  column-gap: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
   margin-bottom: 20px;
 }
 
 .presentationBlock {
-  flex: 1 1 50%;
   box-sizing: border-box;
 }
 
 .specializationsArea {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 530px) {
+  .presentationArea {
+    grid-template-columns: none;
+    grid-template-rows: auto 300px;
+  }
 }

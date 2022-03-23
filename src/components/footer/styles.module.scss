@@ -22,7 +22,7 @@
   color: white;
   align-self: stretch;
   display: grid;
-  grid-column-gap: 81px;
+  grid-gap: 81px;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
 }
@@ -47,6 +47,7 @@
 .darkSideTitle {
   font-weight: 500;
   margin-bottom: 14px;
+  text-align: center;
 }
 
 .darkSideText {
@@ -71,5 +72,21 @@
 
   &:hover, &:active {
     color: #BFC0C1;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .dark {
+    grid-auto-flow: row;
+  }
+
+  .darkSide {
+    &:not(:last-child):after {
+      height: 1px;
+      width: 100%;
+      top: auto;
+      left: 0;
+      bottom: -41px;
+    }
   }
 }

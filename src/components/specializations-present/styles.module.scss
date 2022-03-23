@@ -42,3 +42,20 @@
 .former {
   display: block;
 }
+
+@media only screen and (max-width: 530px) {
+  .block {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .itemGroup {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .block {
+    grid-template-columns: 1fr;
+  }
+}

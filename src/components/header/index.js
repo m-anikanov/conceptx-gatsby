@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import cn from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faPhone} from '@fortawesome/free-solid-svg-icons';
 
 import {Contacts, Routes} from '/src/constants';
+import {useBooleanState} from '/src/hooks/use-boolean-state';
+import {useOutsideClick} from '/src/hooks/use-outside-click';
 import {Phone} from '../phone';
 
 import * as styles from './styles.module.scss';
@@ -13,6 +17,12 @@ const MENU_ITEMS_ORDER = [
 ];
 
 export const Header = ({location}) => {
+  const phonesRef = useRef(null);
+
+  const [phonesVisible, setPhonesVisible, setPhonesHidden] = useBooleanState(false);
+
+  useOutsideClick(phonesRef, setPhonesHidden);
+
   return (
     <section className={styles.header}>
       <a href={Routes.ABOUT_US.route}>
@@ -29,9 +39,14 @@ export const Header = ({location}) => {
           </a>
         ))}
       </menu>
-      <section className={styles.phones}>
-        <Phone phone={Contacts.ROMAN.phone} label="Роман"/>
-        <Phone phone={Contacts.DMITRY.phone} label="Дмитрий"/>
+      <section className={styles.phones} tabIndex={1} ref={phonesRef}>
+        <section className={styles.phonesButton} onClick={setPhonesVisible}>
+          <FontAwesomeIcon icon={faPhone}/>
+        </section>
+        <section className={cn(styles.phonesList, {[styles.visible]: phonesVisible})}>
+          <Phone phone={Contacts.ROMAN.phone} label="Роман"/>
+          <Phone phone={Contacts.DMITRY.phone} label="Дмитрий"/>
+        </section>
       </section>
     </section>
   );

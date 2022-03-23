@@ -9,6 +9,7 @@
 
 .title {
   font-size: 20px;
+  line-height: 30px;
   text-align: center;
 }
 
@@ -23,11 +24,12 @@
 }
 
 .imagePic {
+  width: 100%;
   transition: transform ease-out .2s;
 }
 
 .image {
-  flex: 0 0 auto;
+  flex: 1 1 auto;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
