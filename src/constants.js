@@ -37,9 +37,13 @@ export const Contacts = {
     },
     DMITRY: {
         phone: '+79268273712',
+        tg: 'https://t.me/CDiman',
     },
     ROMAN: {
         phone: '+79773283006',
+    },
+    VK: {
+      src: 'https://vk.com/2rdvk',
     }
 }
 

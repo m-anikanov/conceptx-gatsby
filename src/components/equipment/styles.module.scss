@@ -1,0 +1,73 @@
+@import '../../constants';
+
+.equipment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0 40px;
+  position: relative;
+}
+
+.anchor {
+  position: absolute;
+  top: 0;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.titleLogo {
+  font-weight: bold;
+}
+
+.list {
+  gap: 20px;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+}
+
+.item {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.itemTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.itemBullets {
+  margin-bottom: 10px;
+
+  &:before {
+    content: '';
+    height: 1px;
+    background: #ccc;
+    display: block;
+    margin: 10px 0 20px;
+  }
+}
+
+.bullet {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.bulletTitle {
+  font-weight: bold;
+
+  &:after {
+    content: ':';
+    margin-right: 5px;
+  }
+}
+
+.itemDescription {
+  font-size: 14px;
+  margin-bottom: 10px;
+}

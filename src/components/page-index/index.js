@@ -6,6 +6,7 @@ import {EquipmentPresent} from 'src/components/equipment-present';
 import {SpecializationsPresent} from 'src/components/specializations-present';
 import {Routes} from '/src/constants';
 import {Portfolio} from '/src/components/portfolio';
+import {Equipment} from '/src/components/equipment';
 
 import * as styles from './styles.module.scss';
 
@@ -28,6 +29,8 @@ const PageIndex = () => {
       <SpecializationsPresent className={styles.specializationsArea} hrefPrefix={Routes.SPEC.route} />
 
       <Portfolio />
+
+      <Equipment />
 
       {false && <Script src="https://vk.com/js/api/openapi.js?169" onReady={onVkReady}/>}
 

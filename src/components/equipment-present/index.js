@@ -10,7 +10,7 @@ import * as styles from './styles.module.scss';
 
 export const EquipmentPresent = ({className}) => {
   return (
-    <Picture className={className} url={img} blurHeight="45%" href="/">
+    <Picture className={className} url={img} blurHeight="45%" href="#equipment">
       <span className={styles.captionText}>
         <span>Оборудование</span>
         {' '}
