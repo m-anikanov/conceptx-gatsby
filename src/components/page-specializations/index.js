@@ -3,7 +3,7 @@ import React from 'react';
 
 import {SpecializationSection} from 'src/components/specialization-section';
 import {SpecializationsPresent} from 'src/components/specializations-present';
-import {Specializations} from 'constants';
+import {Specializations} from 'src/constants';
 import {useStaticSpecializationsImgQuery} from 'src/hooks/use-static-specializations-img-query';
 
 import * as styles from './styles.module.scss';

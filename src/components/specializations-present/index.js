@@ -2,7 +2,7 @@ import React from "react"
 import cn from 'classnames';
 import chunk from 'lodash/chunk';
 
-import {SpecializationsList} from 'constants';
+import {SpecializationsList} from 'src/constants';
 
 import * as styles from './styles.module.scss';
 

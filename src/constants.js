@@ -100,10 +100,10 @@ export const Routes = {
   },
   SPEC: {
     text: 'Что делаем',
-    route: '/specializations',
+    route: '/specializations/',
   },
   PRICE: {
     text: 'Контакты',
-    route: '/contacts',
+    route: '/contacts/',
   },
 };
