@@ -1,8 +1,8 @@
-/* global VK */
 import React from 'react';
 
 import {faClock, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 
+import {VkWidget} from 'src/components/vk-widget';
 import {Contacts} from '/src/constants';
 import {Phone} from '../phone';
 import {Map} from '../Map';
@@ -80,6 +80,7 @@ const PageContacts = () => {
             </Bullet>
           </section>
         </section>
+        <VkWidget/>
     </section>
   )
 };

@@ -44,6 +44,7 @@ export const Contacts = {
     },
     VK: {
       src: 'https://vk.com/2rdvk',
+      id: 128102952,
     }
 }
 

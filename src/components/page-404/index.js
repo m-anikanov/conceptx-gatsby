@@ -1,6 +1,6 @@
-/* global VK */
 import React from 'react';
-import { Link } from "gatsby"
+
+import {VkWidget} from 'src/components/vk-widget';
 
 import * as styles from './styles.module.scss';
 
@@ -20,6 +20,8 @@ const Page404 = () => {
         <br />
         Запрашиваемая страница не найдена.
       </p>
+
+      <VkWidget />
     </main>
   )
 };
