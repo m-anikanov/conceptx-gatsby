@@ -14,7 +14,7 @@ const Map = ({clickable, lat, lon, width, height, zoom, className}) => {
   params.set('z', zoom);
 
   const link = `https://yandex.ru/maps/?${params}`;
-  const map = <img className={styles.mapImage} src={`https://static-maps.yandex.ru/1.x/?${params}`}/>;
+  const map = <img className={styles.mapImage} alt="Map" src={`https://static-maps.yandex.ru/1.x/?${params}`}/>;
 
   return clickable ? (
     <a className={cn(styles.map, className)} href={link} target="_blank" rel="noreferrer">{map}</a>
