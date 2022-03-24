@@ -10,6 +10,7 @@ import {
   getImgBackgroundColor,
   getSmallImage,
 } from '/src/hooks/use-static-portolio-img-query';
+import { COMPANY_NAME } from 'src/constants';
 import { getContrastColor } from '/src/utils';
 
 import * as styles from './styles.module.scss';
@@ -29,7 +30,7 @@ export const Portfolio = () => {
   return (
     <section className={styles.portfolio}>
       <section className={styles.title}>
-        Выпоненные работы&nbsp;<span className={styles.titleLogo}>2RDStudio</span>
+        Выпоненные работы&nbsp;<span className={styles.titleLogo}>{COMPANY_NAME}</span>
       </section>
       <section className={styles.list}>
         <PhotoProvider

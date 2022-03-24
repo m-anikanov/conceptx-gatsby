@@ -1,6 +1,7 @@
 import React from "react"
 import cn from 'classnames';
 import chunk from 'lodash/chunk';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import {SpecializationsList} from 'src/constants';
 
@@ -12,10 +13,17 @@ export const SpecializationsPresent = ({className, hrefPrefix = ''}) => {
       {chunk(SpecializationsList, 3).map((chunk) => (
         <section className={styles.itemGroup}>
           {chunk.map(({name, color, caption, anchor}) => (
-            <a href={`${hrefPrefix}#${anchor}`} className={styles.item} style={{background: color}}>
-              <span className={styles.itemName}>{name}</span>
-              <span className={styles.itemCaption}>{caption}</span>
-            </a>
+            hrefPrefix ? (
+              <a href={`${hrefPrefix}#${anchor}`} className={styles.item} style={{background: color}}>
+                <span className={styles.itemName}>{name}</span>
+                <span className={styles.itemCaption}>{caption}</span>
+              </a>
+            ) : (
+              <AnchorLink href={`${hrefPrefix}#${anchor}`} className={styles.item} style={{background: color}}>
+                <span className={styles.itemName}>{name}</span>
+                <span className={styles.itemCaption}>{caption}</span>
+              </AnchorLink>
+            )
           ))}
         </section>
       ))}

@@ -1,0 +1,28 @@
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: node:16
+
+pipelines:
+  default:
+    - step:
+        name: Build
+        caches:
+          - node
+        script:
+          - npm install --force
+    - step:
+        name: Deploy to Jino
+        script:
+          - pipe: atlassian/ftp-deploy:0.3.7
+            variables:
+              USER: 'j62025748_bitbucket-ci'
+              PASSWORD: '<string>'
+              SERVER: '<string>'
+              REMOTE_PATH: '<string>'
+              # LOCAL_PATH: '<string>' # Optional
+              # DEBUG: '<boolean>' # Optional
+              # EXTRA_ARGS: '<string>' # Optional.
+              # DELETE_FLAG: '<boolean>' # Optional.

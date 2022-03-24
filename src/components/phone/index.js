@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import { Bullet } from '../bullet';
 
 import { formatPhone } from '/src/utils';

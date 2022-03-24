@@ -25,7 +25,7 @@ export const useStaticPortfolioImgQuery = () => {
                     cropFocus: CENTER
                   }
                   placeholder: DOMINANT_COLOR
-                  formats: [AUTO, WEBP, AVIF]
+                  formats: [AUTO]
                 )
                 fields {
                   exif {

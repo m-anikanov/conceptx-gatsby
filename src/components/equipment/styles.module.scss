@@ -73,6 +73,10 @@
   margin-bottom: 10px;
 }
 
+ul {
+  margin: 0;
+}
+
 @media only screen and (max-width: 530px) {
   .list {
     grid-template-columns: 1fr;

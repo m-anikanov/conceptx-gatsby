@@ -21,7 +21,7 @@ export const useStaticSpecializationsImgQuery = () => {
                   height: 360
                   transformOptions: {cropFocus: CENTER}
                   placeholder: DOMINANT_COLOR
-                  formats: [AUTO, WEBP, AVIF]
+                  formats: [AUTO]
                 )
               }
             }

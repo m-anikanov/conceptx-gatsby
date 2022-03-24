@@ -11,3 +11,9 @@ export const getContrastColor = (color, threshold = 155) => {
 
   return brightness > threshold ? '#000000' : '#ffffff';
 }
+
+export const isNodeJS =
+  typeof process === "object" &&
+  process + "" === "[object process]" &&
+  !process.versions.nw &&
+  !(process.versions.electron && process.type && process.type !== "browser");

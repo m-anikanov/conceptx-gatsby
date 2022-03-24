@@ -1,6 +1,8 @@
 import React, {useCallback} from "react"
 import {Helmet} from "react-helmet";
 
+import {isNodeJS} from '/src/utils';
+
 export const Script = ({src, onReady}) => {
   const handleChangeClientState = useCallback((newState, addedTags) => {
     if (addedTags && addedTags.scriptTags) {
@@ -10,6 +12,10 @@ export const Script = ({src, onReady}) => {
       }
     }
   }, [src, onReady]);
+
+  if (isNodeJS) {
+    return null;
+  }
 
   return <>
     <Helmet onChangeClientState={handleChangeClientState}>

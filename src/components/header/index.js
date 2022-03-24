@@ -35,11 +35,11 @@ export const Header = ({location}) => {
             href={item.route}
             key={item.route}
           >
-            {item.text}
+            {item.text} 
           </a>
         ))}
       </menu>
-      <section className={styles.phones} tabIndex={1} ref={phonesRef}>
+      <section className={styles.phones} ref={phonesRef}>
         <section className={styles.phonesButton} onClick={setPhonesVisible}>
           <FontAwesomeIcon icon={faPhone}/>
         </section>

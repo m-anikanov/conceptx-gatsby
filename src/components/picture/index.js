@@ -1,5 +1,6 @@
 import React from "react"
 import cn from 'classnames';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import * as styles from './styles.module.scss';
 
@@ -25,6 +26,6 @@ export const Picture = ({className, url, children, blurHeight, href}) => {
   const blockClass = cn(styles.block, className);
 
   return href
-    ? <a className={blockClass} href={href}>{content}</a>
+    ? <AnchorLink className={blockClass} href={href}>{content}</AnchorLink>
     : <section className={blockClass}>{content}</section>;
 }

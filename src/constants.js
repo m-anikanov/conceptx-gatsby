@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const START_YEAR = 2016;
-export const COMPANY_NAME = '2RDStudio';
+export const COMPANY_NAME = 'ConceptX';
 
 export const Contacts = {
     MANUFACTURE: {
@@ -23,7 +23,15 @@ export const Contacts = {
     },
     PV_SHCHELK: {
         phone: '+79773283006',
-        address: 'г. Щелково, улица Комарова, 2',
+        address: (
+          <>
+            г. Щелково, улица Комарова, 2
+            <br/>
+            Магазин "Пятерочка", цокольный этаж, 
+            <br/> 
+            Vape Universe
+          </>
+        ),
         coords: {
             lat: 55.919750,
             lon: 37.991595,
@@ -49,10 +57,16 @@ export const Contacts = {
 }
 
 export const Specializations = {
-    LASER: {
-      name: <>Лазерная&nbsp;резка и&nbsp;гравировка</>,
+    LASER_CUT: {
+      name: <>Лазерная&nbsp;резка</>,
+      caption: 'Раскрой',
       color: '#E7ADF0',
-      anchor: 'laser',
+      anchor: 'laser-cut',
+    },
+    LASER_GROOVE: {
+      name: <>Лазерная гравировка</>,
+      color: '#CFE8FF',
+      anchor: 'laser-grove',
     },
     FRAZER: {
       name: <>Фрезерная обработка</>,
@@ -71,11 +85,11 @@ export const Specializations = {
       color: '#F4A3A3',
       anchor: 'fdm',
     },
-    SLS: {
+    DLP: {
       name: <>Макро&nbsp;3D&nbsp;печать</>,
-      caption: <>SLS</>,
+      caption: <>DLP</>,
       color: '#F6C57F',
-      anchor: 'sls',
+      anchor: 'dlp',
     },
     MODELING: {
       name: <>Моделирование</>,
@@ -86,12 +100,12 @@ export const Specializations = {
 };
 
 export const SpecializationsList = [
-    Specializations.LASER,
+    Specializations.LASER_CUT,
+    Specializations.LASER_GROOVE,
     Specializations.FRAZER,
     Specializations.UV,
     Specializations.FDM,
-    Specializations.SLS,
-    Specializations.MODELING,
+    Specializations.DLP,
 ];
 
 export const Routes = {

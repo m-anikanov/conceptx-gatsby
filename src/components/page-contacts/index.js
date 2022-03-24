@@ -14,22 +14,29 @@ const PageContacts = () => {
   return (
     <section className={styles.contacts}>
         <section className={styles.contactItem}>
-          <section className={styles.contactItemTitle}>Производство</section>
+          <section className={styles.contactItemTitle}>
+            Пункт выдачи в г. Щелково
+          </section>
           <Map 
             className={styles.contactItemMap}
             clickable 
             width="400" 
             height="250"
-            lat={Contacts.MANUFACTURE.coords.lat} 
-            lon={Contacts.MANUFACTURE.coords.lon} 
+            lat={Contacts.PV_SHCHELK.coords.lat} 
+            lon={Contacts.PV_SHCHELK.coords.lon} 
             zoom={13}/>
           <section className={styles.contactItemInfo}>
             <Bullet icon={faLocationDot}>
-              {Contacts.MANUFACTURE.address}
+              {Contacts.PV_SHCHELK.address}
             </Bullet>
           </section>
           <section className={styles.contactItemInfo}>
-            <Phone phone={Contacts.MANUFACTURE.phone}/>
+            <Phone phone={Contacts.PV_SHCHELK.phone}/>
+          </section>
+          <section className={styles.contactItemInfo}>
+            <Bullet icon={faClock}>
+              {Contacts.PV_SHCHELK.time}
+            </Bullet>
           </section>
         </section>
         <section className={styles.contactItem}>
@@ -57,27 +64,22 @@ const PageContacts = () => {
           </section>
         </section>
         <section className={styles.contactItem}>
-          <section className={styles.contactItemTitle}>Пункт выдачи в г. Щелково</section>
+          <section className={styles.contactItemTitle}>Производство</section>
           <Map 
             className={styles.contactItemMap}
             clickable 
             width="400" 
             height="250"
-            lat={Contacts.PV_SHCHELK.coords.lat} 
-            lon={Contacts.PV_SHCHELK.coords.lon} 
+            lat={Contacts.MANUFACTURE.coords.lat} 
+            lon={Contacts.MANUFACTURE.coords.lon} 
             zoom={13}/>
           <section className={styles.contactItemInfo}>
             <Bullet icon={faLocationDot}>
-              {Contacts.PV_SHCHELK.address}
+              {Contacts.MANUFACTURE.address}
             </Bullet>
           </section>
           <section className={styles.contactItemInfo}>
-            <Phone phone={Contacts.PV_SHCHELK.phone}/>
-          </section>
-          <section className={styles.contactItemInfo}>
-            <Bullet icon={faClock}>
-              {Contacts.PV_SHCHELK.time}
-            </Bullet>
+            <Phone phone={Contacts.MANUFACTURE.phone}/>
           </section>
         </section>
         <VkWidget/>

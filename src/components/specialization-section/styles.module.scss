@@ -66,6 +66,11 @@
   height: 180px;
   border-radius: 8px;
   overflow: hidden;
+
+  img {
+    border-radius: 8px;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 790px) {
@@ -99,5 +104,9 @@
 
   .content {
     grid-column: 1;
+  }
+
+  .picture {
+    max-width: none;
   }
 }
