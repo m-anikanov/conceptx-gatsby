@@ -8,7 +8,7 @@ import {
   getImgName, 
   getImgOriginalSrc, 
   getImgBackgroundColor,
-  getNode,
+  getSmallImage,
 } from '/src/hooks/use-static-portolio-img-query';
 import { getContrastColor } from '/src/utils';
 
@@ -36,7 +36,7 @@ export const Portfolio = () => {
           toolbarRender={toolbarRender}
         >
           {images.slice(0, imgMaxLimit).map((edge, index) => {
-            const img = getImage(getNode(edge));
+            const img = getImage(getSmallImage(edge));
 
             return (
               <PhotoView key={index} src={getImgOriginalSrc(edge)} name={getImgName(edge)}>

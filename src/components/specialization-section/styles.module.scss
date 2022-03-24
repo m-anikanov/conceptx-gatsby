@@ -64,6 +64,8 @@
 
 .picture {
   height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 790px) {

@@ -4,18 +4,21 @@ import React from 'react';
 import {SpecializationSection} from 'src/components/specialization-section';
 import {SpecializationsPresent} from 'src/components/specializations-present';
 import {Specializations} from 'constants';
-
-import image3dFdm from './assets/img-94469.jpg';
-import imageFrazing from './assets/img-10049.jpg';
-import imageModeling from './assets/img-26165.jpg';
-import image3dSls from './assets/img-29828.jpg';
-import imageLaserCutting from './assets/img-40289.jpg';
-import imageLaserGrooving from './assets/img-61515.jpg';
-import imageUvPrinting from './assets/img-90427.jpg';
+import {useStaticSpecializationsImgQuery} from 'src/hooks/use-static-specializations-img-query';
 
 import * as styles from './styles.module.scss';
 
 const PageSpecializations = () => {
+  const {
+    'img-94469': image3dFdm,
+    'img-10049': imageFrazing,
+    'img-26165': imageModeling,
+    'img-29828': image3dSls,
+    'img-40289': imageLaserCutting,
+    'img-61515': imageLaserGrooving,
+    'img-90427': imageUvPrinting,
+  } = useStaticSpecializationsImgQuery();
+
   return (
     <>
       <SpecializationsPresent className={styles.present}/>

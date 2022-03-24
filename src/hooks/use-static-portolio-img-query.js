@@ -14,8 +14,11 @@ export const useStaticPortfolioImgQuery = () => {
           edges {
             node {
               name
-              childImageSharp {
-                gatsbyImageData(
+              src: childImageSharp {
+                large: fluid(maxWidth: 1024, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+                small: gatsbyImageData(
                   width: 225
                   height: 160
                   transformOptions: {
@@ -30,9 +33,6 @@ export const useStaticPortfolioImgQuery = () => {
                       dateTaken
                     }
                   }
-                }
-                original {
-                  src
                 }
               }
             }
@@ -51,22 +51,26 @@ function getNode(edge) {
   return edge.node;
 }
 
+function getSmallImage(edge) {
+  return getNode(edge)?.src?.small;
+}
+
 function getImgName(edge) {
   return getNode(edge).name;
 }
 
 function getImgExifTakenTime(edge) {
-  const taken = getNode(edge)?.childImageSharp?.fields?.exif?.meta?.dateTaken;
+  const taken = getNode(edge)?.src?.fields?.exif?.meta?.dateTaken;
 
   return taken ? new Date(taken).getTime() : null;
 }
 
 function getImgOriginalSrc(edge) {
-  return getNode(edge)?.childImageSharp?.original?.src;
+  return getNode(edge)?.src?.large?.src;
 }
 
 function getImgBackgroundColor(edge) {
-  return getNode(edge)?.childImageSharp?.gatsbyImageData?.backgroundColor;
+  return getNode(edge)?.src?.small?.backgroundColor;
 }
 
 export {
@@ -75,4 +79,5 @@ export {
   getImgExifTakenTime,
   getImgOriginalSrc,
   getImgBackgroundColor,
+  getSmallImage,
 };
