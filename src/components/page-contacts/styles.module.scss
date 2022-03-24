@@ -1,15 +1,12 @@
 .contacts {
-    display: flex;
+    display: grid;
     gap: 40px;
     margin-bottom: 40px;
-}
-
-.contactItem {
-    flex: 1 1 auto;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
 }
 
 .contactItemMap {
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
 }
 
 .contactItemTitle {
