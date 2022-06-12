@@ -48,6 +48,7 @@ export const Portfolio = () => {
                     placeholder="dominantColor"
                     loading="lazy"
                     layout="fixed"
+                    alt={COMPANY_NAME}
                   />
                   <section className={styles.imageTitle} style={{
                     color: getContrastColor(getImgBackgroundColor(edge)),

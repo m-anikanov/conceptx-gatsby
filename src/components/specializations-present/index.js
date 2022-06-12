@@ -12,14 +12,14 @@ export const SpecializationsPresent = ({className, hrefPrefix = ''}) => {
     <section className={cn(styles.block, className)}>
       {chunk(SpecializationsList, 3).map((chunk) => (
         <section className={styles.itemGroup}>
-          {chunk.map(({name, color, caption, anchor}) => (
+          {chunk.map(({name, color, caption, anchor}, i) => (
             hrefPrefix ? (
-              <a href={`${hrefPrefix}#${anchor}`} className={styles.item} style={{background: color}}>
+              <a key={i} href={`${hrefPrefix}#${anchor}`} className={styles.item} style={{background: color}}>
                 <span className={styles.itemName}>{name}</span>
                 <span className={styles.itemCaption}>{caption}</span>
               </a>
             ) : (
-              <AnchorLink href={`${hrefPrefix}#${anchor}`} className={styles.item} style={{background: color}}>
+              <AnchorLink key={i} href={`${hrefPrefix}#${anchor}`} className={styles.item} style={{background: color}}>
                 <span className={styles.itemName}>{name}</span>
                 <span className={styles.itemCaption}>{caption}</span>
               </AnchorLink>

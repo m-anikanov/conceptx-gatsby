@@ -2,6 +2,7 @@ import React from 'react';
 
 export const START_YEAR = 2016;
 export const COMPANY_NAME = 'ConceptX';
+export const YA_METRIKA = 88943418;
 
 export const Contacts = {
     MANUFACTURE: {

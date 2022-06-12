@@ -1,5 +1,7 @@
 import React from 'react';
+import {YandexMetrika} from 'yandex-metrika-react';
 
+import {YA_METRIKA} from '../../constants';
 import {Header} from '../header';
 import {Footer} from '../footer';
 
@@ -7,11 +9,22 @@ import * as styles from './styles.module.scss';
 
 export const Page = ({children, location}) => {
   return (
-    <main className={styles.page}>
-      <Header location={location}/>
-      {children}
-      <Footer/>
-    </main>
+    <YandexMetrika
+      counterId={YA_METRIKA}
+      options={{
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        triggerEvent: true,
+      }}
+    >
+      <main className={styles.page}>
+        <Header location={location}/>
+        {children}
+        <Footer/>
+      </main>
+    </YandexMetrika>
   );
 }
 
