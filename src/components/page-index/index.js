@@ -3,9 +3,9 @@ import {VkWidget} from 'src/components/vk-widget';
 import {TeamPresent} from 'src/components/team-present';
 import {EquipmentPresent} from 'src/components/equipment-present';
 import {SpecializationsPresent} from 'src/components/specializations-present';
-import {Routes} from '/src/constants';
-import {Portfolio} from '/src/components/portfolio';
-import {Equipment} from '/src/components/equipment';
+import {Routes} from 'src/constants';
+import {Portfolio} from 'src/components/portfolio';
+import {Equipment} from 'src/components/equipment';
 
 import * as styles from './styles.module.scss';
 

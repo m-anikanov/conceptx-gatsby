@@ -3,10 +3,10 @@ import React from 'react';
 import {faClock, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 
 import {VkWidget} from 'src/components/vk-widget';
-import {Contacts} from '/src/constants';
-import {Phone} from '../phone';
-import {Map} from '../Map';
-import {Bullet} from '../Bullet';
+import {Contacts} from 'src/constants';
+import {Phone} from 'src/components/phone';
+import {Map} from 'src/components/map';
+import {Bullet} from 'src/components/bullet';
 
 import * as styles from './styles.module.scss';
 

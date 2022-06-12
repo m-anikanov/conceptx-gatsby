@@ -1,7 +1,7 @@
 /* global VK */
 import React, {useCallback} from 'react';
 import {Script} from 'src/components/script';
-import {Contacts} from '/src/constants';
+import {Contacts} from 'src/constants';
 
 const VkWidget = () => {
   const onVkReady = useCallback(() => {

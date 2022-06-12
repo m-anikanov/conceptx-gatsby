@@ -1,12 +1,12 @@
-import React from "react"
-
-import {START_YEAR, COMPANY_NAME} from '/src/constants';
-
-import * as styles from './styles.module.scss';
+import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCopyright} from '@fortawesome/free-solid-svg-icons';
-import {Contacts} from '/src/constants';
 import {faVk, faTelegram} from '@fortawesome/free-brands-svg-icons';
+
+import {START_YEAR, COMPANY_NAME} from 'src/constants';
+import {Contacts} from 'src/constants';
+
+import * as styles from './styles.module.scss';
 
 const currentYear = new Date().getFullYear();
 

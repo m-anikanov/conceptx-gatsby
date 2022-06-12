@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react';
 import cn from 'classnames';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import * as styles from './styles.module.scss';
 

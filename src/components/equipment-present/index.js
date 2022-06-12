@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 import {COMPANY_NAME} from 'src/constants';
 import {Picture} from 'src/components/picture';

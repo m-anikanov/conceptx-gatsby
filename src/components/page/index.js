@@ -1,9 +1,9 @@
 import React from 'react';
 import {YandexMetrika} from 'yandex-metrika-react';
 
-import {YA_METRIKA} from '../../constants';
-import {Header} from '../header';
-import {Footer} from '../footer';
+import {YA_METRIKA} from 'src/constants';
+import {Header} from 'src/components/header';
+import {Footer} from 'src/components/footer';
 
 import * as styles from './styles.module.scss';
 

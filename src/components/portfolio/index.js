@@ -1,5 +1,5 @@
 import React, {useMemo} from 'react';
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
@@ -9,9 +9,9 @@ import {
   getImgOriginalSrc, 
   getImgBackgroundColor,
   getSmallImage,
-} from '/src/hooks/use-static-portolio-img-query';
+} from 'src/hooks/use-static-portolio-img-query';
 import { COMPANY_NAME } from 'src/constants';
-import { getContrastColor } from '/src/utils';
+import { getContrastColor } from 'src/utils';
 
 import * as styles from './styles.module.scss';
 

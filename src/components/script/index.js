@@ -1,7 +1,7 @@
-import React, {useCallback} from "react"
-import {Helmet} from "react-helmet";
+import React, {useCallback} from 'react';
+import {Helmet} from 'react-helmet';
 
-import {isNodeJS} from '/src/utils';
+import {isNodeJS} from 'src/utils';
 
 export const Script = ({src, onReady}) => {
   const handleChangeClientState = useCallback((newState, addedTags) => {

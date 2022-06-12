@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
-import { Bullet } from '../bullet';
+import { Bullet } from 'src/components/bullet';
 
-import { formatPhone } from '/src/utils';
+import { formatPhone } from 'src/utils';
 
 import * as styles from './styles.module.scss';
 

@@ -1,12 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 import cn from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPhone} from '@fortawesome/free-solid-svg-icons';
 
-import {Contacts, Routes} from '/src/constants';
-import {useBooleanState} from '/src/hooks/use-boolean-state';
-import {useOutsideClick} from '/src/hooks/use-outside-click';
-import {Phone} from '../phone';
+import {Contacts, Routes} from 'src/constants';
+import {useBooleanState} from 'src/hooks/use-boolean-state';
+import {useOutsideClick} from 'src/hooks/use-outside-click';
+import {Phone} from 'src/components/phone';
 
 import * as styles from './styles.module.scss';
 

@@ -1,7 +1,7 @@
 import React from "react"
 import cn from 'classnames';
 import chunk from 'lodash/chunk';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import {SpecializationsList} from 'src/constants';
 

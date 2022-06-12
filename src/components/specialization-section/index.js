@@ -1,5 +1,5 @@
 import React from 'react';
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import * as styles from './styles.module.scss';
 
