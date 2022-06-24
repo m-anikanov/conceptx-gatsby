@@ -11,12 +11,12 @@ import * as styles from './styles.module.scss';
 const PageSpecializations = () => {
   const {
     'img-94469': image3dFdm,
-    'img-10049': imageFrazing,
+    'img-64753': imageFrazing,
     'img-26165': imageModeling,
     'img-29828': image3dSls,
     'img-40289': imageLaserCutting,
     'img-90427': imageUvPrinting,
-    'img-94463': imageLaserGrooving,
+    'img-23546': imageLaserGrooving,
   } = useStaticSpecializationsImgQuery();
 
   return (
