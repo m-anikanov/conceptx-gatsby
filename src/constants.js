@@ -6,7 +6,7 @@ export const YA_METRIKA = 88943418;
 
 export const Contacts = {
     MANUFACTURE: {
-        phone: '+79773283006',
+        phone: '+79917234643',
         address: 'г. Щелково, Заводская улица, 2к112',
         coords: {
             lat: 55.911290,
@@ -23,7 +23,7 @@ export const Contacts = {
         time: 'Пн-Вс 10:00 - 21:00',
     },
     PV_SHCHELK: {
-        phone: '+79773283006',
+        phone: '+79917234643',
         address: (
           <>
             г. Щелково, улица Комарова, 2
@@ -50,7 +50,7 @@ export const Contacts = {
         vk: 'https://vk.com/cd_diman',
     },
     ROMAN: {
-        phone: '+79773283006',
+        phone: '+79917234643',
         vk: 'https://vk.com/undervaper',
     },
     VK: {
