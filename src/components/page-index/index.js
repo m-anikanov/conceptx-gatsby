@@ -6,6 +6,7 @@ import {SpecializationsPresent} from 'src/components/specializations-present';
 import {Routes} from 'src/constants';
 import {Portfolio} from 'src/components/portfolio';
 import {Equipment} from 'src/components/equipment';
+import {Partners} from 'src/components/partners';
 
 import * as styles from './styles.module.scss';
 
@@ -22,6 +23,8 @@ const PageIndex = () => {
       <Portfolio />
 
       <Equipment />
+
+      <Partners />
 
       <VkWidget />
     </>
