@@ -8,7 +8,7 @@ export const Partners = () => {
       <section className={styles.title}>Наши клиенты</section>
       <section className={styles.list}>
         <a
-          href="https://livedrive.rent/ru/"
+          href="https://livedrive.rent/"
           className={styles.item}
           target="__blank"
           id="partners"
