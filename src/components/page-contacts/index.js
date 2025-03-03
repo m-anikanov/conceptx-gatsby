@@ -14,7 +14,7 @@ const PageContacts = () => {
   return (
     <section className={styles.contacts}>
         <section className={styles.contactItem}>
-          <section className={styles.contactItemTitle}>Производство</section>
+          <section className={styles.contactItemTitle}>Мастерская</section>
           <Map 
             className={styles.contactItemMap}
             clickable 

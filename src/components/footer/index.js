@@ -28,7 +28,7 @@ export const Footer = () => {
           <span className={styles.darkSideText}>Если у вас есть вопрос или пожелание, мы будем рады ответить и постраемся решить любую вашу задачу</span>
           <span className={styles.darkSideFooter}>
             <a className={styles.darkSideIcon} href={Contacts.VK.src}><FontAwesomeIcon icon={faVk} /></a>
-            {/* <a className={styles.darkSideIcon} href={Contacts.VK.src}><FontAwesomeIcon icon={faTelegram} /></a> */}
+            <a className={styles.darkSideIcon} href={Contacts.VK.tg}><FontAwesomeIcon icon={faTelegram} /></a>
           </span>
         </section>
       </section>

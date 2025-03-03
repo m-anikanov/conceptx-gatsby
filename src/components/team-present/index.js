@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 import { Contacts } from '../../constants';
 
-import personRoman from './assets/peson-roman.png';
+import personAndrey from './assets/person-andrey.jpg';
 
 import * as styles from './styles.module.scss';
 
@@ -15,7 +15,7 @@ const Person = ({href, img, name, position}) => (
       <span className={styles.personPosition}>{position}</span>
     </section>
   </a>
-)
+);
 
 export const TeamPresent = ({className}) => {
   return (
@@ -27,7 +27,7 @@ export const TeamPresent = ({className}) => {
         Современное оборудование для лазерной резки, гравировки, фрезеровки и 3D-печати обеспечивает высокое качество и точность каждого изделия, гарантируя отличный результат.
       </p>
       <section className={styles.team}>
-        <Person href={Contacts.ANDREY.vk} name="Андрей" position="Директор" img={personRoman}/>
+        <Person href={Contacts.ANDREY.vk} name="Андрей" position="Директор" img={personAndrey}/>
       </section>
     </section>
   );
