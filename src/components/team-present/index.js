@@ -4,7 +4,6 @@ import cn from 'classnames';
 import { Contacts } from '../../constants';
 
 import personRoman from './assets/peson-roman.png';
-import personDmitry from './assets/person-dmitry.png';
 
 import * as styles from './styles.module.scss';
 
@@ -28,8 +27,7 @@ export const TeamPresent = ({className}) => {
         Современное оборудование для лазерной резки, гравировки, фрезеровки и 3D-печати обеспечивает высокое качество и точность каждого изделия, гарантируя отличный результат.
       </p>
       <section className={styles.team}>
-        <Person href={Contacts.ROMAN.vk} name="Роман" position="Директор" img={personRoman}/>
-        <Person href={Contacts.DMITRY.vk} name="Дмитрий" position="Инженер" img={personDmitry}/>
+        <Person href={Contacts.ANDREY.vk} name="Андрей" position="Директор" img={personRoman}/>
       </section>
     </section>
   );

@@ -13,48 +13,13 @@ export const Contacts = {
             lon: 38.033753,
         },
     },
-    PV_KOR: {
-        phone: '+79268273712',
-        address: 'г. Королев, проспект Королёва, 1/5',
-        coords: {
-            lat: 55.920875,
-            lon: 37.833761,
-        },
-        time: 'Пн-Вс 10:00 - 21:00',
-    },
-    PV_SHCHELK: {
-        phone: '+79917234643',
-        address: (
-          <>
-            г. Щелково, улица Комарова, 2
-            <br/>
-            Магазин "Пятерочка", цокольный этаж, 
-            <br/> 
-            Vape Universe
-          </>
-        ),
-        coords: {
-            lat: 55.919750,
-            lon: 37.991595,
-        },
-        time: (
-            <>
-                Пн-Пт 9:00 - 22:00<br/>
-                Сб-Вс 12:00 - 22:00
-            </>
-        ),
-    },
-    DMITRY: {
-        phone: '+79268273712',
-        tg: 'https://t.me/CDiman',
-        vk: 'https://vk.com/cd_diman',
-    },
-    ROMAN: {
-        phone: '+79917234643',
-        vk: 'https://vk.com/undervaper',
+    ANDREY: {
+        phone1: '+79998351030',
+        phone2: '+79258720166', 
+        vk: 'https://vk.com/andreyorlov_9'
     },
     VK: {
-      src: 'https://vk.com/2rdvk',
+      src: 'https://vk.com/conceptx_vk',
       id: 128102952,
     }
 }

@@ -8,7 +8,7 @@ export const Partners = () => {
       <section className={styles.title}>Наши клиенты</section>
       <section className={styles.list}>
         <a
-          href="https://livedrive.rent/"
+          href="https://anycars.rent/"
           className={styles.item}
           target="__blank"
           id="partners"
@@ -16,12 +16,12 @@ export const Partners = () => {
         >
           <img
             className={styles.partnerImg}
-            src="/livedrive-logo.webp"
-            alt="Логотип партнера LiveDrive"
+            src="/anycars-logo.webp"
+            alt="Логотип партнера AnyCars"
             width={100}
           />
           <section className={styles.itemData}>
-            <section className={styles.itemTitle}>LiveDrive.rent</section>
+            <section className={styles.itemTitle}>AnyCars.rent</section>
             <section className={styles.itemDescription}>
               Доступная и надёжная аренда автомобилей
               <br />в Тбилиси и по всей Грузии.

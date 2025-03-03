@@ -44,8 +44,8 @@ export const Header = ({location}) => {
           <FontAwesomeIcon icon={faPhone}/>
         </section>
         <section className={cn(styles.phonesList, {[styles.visible]: phonesVisible})}>
-          <Phone phone={Contacts.ROMAN.phone} label="Роман"/>
-          <Phone phone={Contacts.DMITRY.phone} label="Дмитрий"/>
+          <Phone phone={Contacts.ANDREY.phone1}/>
+          <Phone phone={Contacts.ANDREY.phone2}/>
         </section>
       </section>
     </section>
