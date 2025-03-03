@@ -33,6 +33,11 @@ const PageContacts = () => {
             <Phone phone={Contacts.MANUFACTURE.phone1}/>
             <Phone phone={Contacts.MANUFACTURE.phone2}/>
           </section>
+          <section className={styles.contactItemInfo}>
+            <Bullet icon={faClock}>
+              {Contacts.MANUFACTURE.time}
+            </Bullet>
+          </section>
         </section>
         <VkWidget/>
     </section>

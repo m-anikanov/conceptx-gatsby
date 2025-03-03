@@ -14,6 +14,12 @@ export const Contacts = {
             lon: 38.002995,
         },
         link: 'https://yandex.ru/maps/-/CHBiBO1-',
+        time: (
+            <>
+                Пн-Пт 10:00 - 20:00<br/>
+                Сб-Вс 11:00 - 18:00
+            </>
+        ),
     },
     ANDREY: {
         phone1: '+79998351030',
