@@ -6,12 +6,14 @@ export const YA_METRIKA = 88943418;
 
 export const Contacts = {
     MANUFACTURE: {
-        phone: '+79917234643',
-        address: 'г. Щелково',
+        phone1: '+79998351030',
+        phone2: '+79258720166', 
+        address: 'г. Щелково ул. Советская 1\\2 корп 17',
         coords: {
-            lat: 55.911290,
-            lon: 38.033753,
+            lat: 55.912977,
+            lon: 38.002995,
         },
+        link: 'https://yandex.ru/maps/-/CHBiBO1-',
     },
     ANDREY: {
         phone1: '+79998351030',

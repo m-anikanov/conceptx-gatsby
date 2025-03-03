@@ -22,6 +22,7 @@ const PageContacts = () => {
             height="250"
             lat={Contacts.MANUFACTURE.coords.lat} 
             lon={Contacts.MANUFACTURE.coords.lon} 
+            link={Contacts.MANUFACTURE.link}
             zoom={13}/>
           <section className={styles.contactItemInfo}>
             <Bullet icon={faLocationDot}>
@@ -29,7 +30,8 @@ const PageContacts = () => {
             </Bullet>
           </section>
           <section className={styles.contactItemInfo}>
-            <Phone phone={Contacts.MANUFACTURE.phone}/>
+            <Phone phone={Contacts.MANUFACTURE.phone1}/>
+            <Phone phone={Contacts.MANUFACTURE.phone2}/>
           </section>
         </section>
         <VkWidget/>
